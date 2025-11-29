@@ -47,8 +47,8 @@ Robot::Robot()
     obs["height_map"] = std::vector<float>(HEIGHT_MAP_SIZE, 0.6128f); // Terrain heightmap
 
     // Wait for MCUs to be ready
-    //wait_mcu(front_mcu);
-    //wait_mcu(rear_mcu);
+    wait_mcu(front_mcu);
+    wait_mcu(rear_mcu);
 }
 
 // ------- Wait All Nodes -------
@@ -261,7 +261,7 @@ std::unordered_map<std::string, std::vector<float>>& Robot::update_mcu_obs(const
 // Get current observation 
 std::unordered_map<std::string, std::vector<float>> Robot::get_obs() {
     // Send action to get latest observation (MIT protocol motors require command to return state)
-    //do_action(last_action, last_torque_ctrl, false);
+    do_action(last_action, last_torque_ctrl, false);
 
     FxCliMap front_mcu_data;
     FxCliMap rear_mcu_data;
