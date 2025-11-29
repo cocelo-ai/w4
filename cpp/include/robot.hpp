@@ -23,8 +23,8 @@
 #include <vector>
 #include <algorithm>
 
-#include "mcu.hpp"   
 #include <fx_cli/fx_client.h> 
+#include "mcu.hpp"  
 
 namespace robot {
 
