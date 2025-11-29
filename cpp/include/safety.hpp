@@ -78,7 +78,7 @@ constexpr float SHOULDER_VEL_HARD_LIMIT_RAD_S = 8.16f;
 constexpr float LEG_POS_SAFETY_MARGIN_RAD = 0.175f;
 constexpr float LEG_POS_MARGIN_NEAR_LIMIT_RAD = 0.261f;
 constexpr float LEG_VEL_THRESHOLD_NEAR_LIMIT_RAD_S = 6.68f;
-constexpr float LEG_VEL_HARD_LIMIT_RAD_S = INFINITY;
+constexpr float LEG_VEL_HARD_LIMIT_RAD_S = 12.56f;
 
 // ════════════════════════════════════════════════════════════════════════════
 // Fall Detection
