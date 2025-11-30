@@ -45,8 +45,8 @@ Robot::Robot()
     obs_["height_map"] = std::vector<float>(HEIGHT_MAP_SIZE, 0.6128f); ///< Terrain heightmap
 
     // Wait for MCUs to be ready
-    //waitMcu(front_mcu_);
-    //waitMcu(rear_mcu_);
+    waitMcu(front_mcu_);
+    waitMcu(rear_mcu_);
 }
 
 // ------- Wait All Nodes -------
@@ -166,7 +166,7 @@ void Robot::updateMcuObs(mcu::McuClient& m){
 // Get current observation 
 std::unordered_map<std::string, std::vector<float>> Robot::getObs() {
     // Send action to get latest observation (MIT protocol motors require command to return state)
-    //doAction(last_action_, last_torque_ctrl_, false);
+    doAction(last_action_, last_torque_ctrl_, false);
 
     std::thread t_front([&]() {
         updateMcuObs(front_mcu_);
