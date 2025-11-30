@@ -86,7 +86,7 @@ constexpr float LEG_VEL_HARD_LIMIT_RAD_S = 15.7f;
 // Fall Detection
 // ════════════════════════════════════════════════════════════════════════════
 
-constexpr float MIN_UPRIGHT_FOR_FALL_DETECTION = -0.766f;  // ≈ 50 Deg.
+constexpr float MIN_UPRIGHT_FOR_FALL_DETECTION = -0.342f;  // ≈ 70 Deg.
 
 // ════════════════════════════════════════════════════════════════════════════
 // Data Structures
