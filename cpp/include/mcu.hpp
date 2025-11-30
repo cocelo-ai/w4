@@ -22,7 +22,7 @@
 #include <array>
 #include <unordered_map>
 
-#include <fx_client_sim.hpp>  
+#include <fx_cli/fx_client.h> 
 
 namespace mcu {
 
